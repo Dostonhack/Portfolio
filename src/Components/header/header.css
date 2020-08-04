@@ -1,0 +1,75 @@
+body{
+    height: 120vh;
+}
+
+div{
+    
+}
+.header1{
+    justify-content:space-around;
+    z-index: 999;
+    width: 100%;
+    transition: 0.8s;
+    
+}
+.inheader{
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+
+/* Header Right */
+.headright {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.headright li {
+    list-style: none;
+    margin: 0px 8px;
+    /* border-bottom: 2px solid red; */
+}
+
+
+
+/* Header Left */
+
+
+/* Scroll */
+
+.scrolled{
+    position: fixed;
+    background-color:gray;
+    z-index: 999;
+}
+
+
+
+/* Size Phone */
+
+
+@media only screen and (max-width: 414px) {
+    .headright{
+      display: none;
+    }
+    .headdrop{
+        display: initial;
+    }
+  }
+
+  /*Size iPod Pro  */
+@media only screen and (max-width: 768px) {
+    .headright{
+      display: none;
+    }
+    .headdrop{
+        display: initial;
+    }
+  }
