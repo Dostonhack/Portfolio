@@ -1,42 +1,71 @@
 body{
-    height: 120vh;
+    position: relative;
+
 }
 
-div{
-    
-}
+
 .header1{
-    justify-content:space-around;
+    justify-content:space-between;
     z-index: 999;
     width: 100%;
     transition: 0.8s;
+    height: 55px;
+    position: absolute;
+    top: 0;
     
 }
 .inheader{
     width: 100%;
+    height: 100%;
     justify-content: space-around;
-    padding: 1rem;
     display: flex;
     align-items: center;
+    position: relative;
 
 
 }
-
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    top: 0;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    
+}
 
 
 /* Header Right */
 .headright {
     display: flex;
     justify-content: space-between;
-    list-style: none;
+    align-items: center;
     
 }
 .headright li {
     list-style: none;
     margin: 0px 8px;
-    /* border-bottom: 2px solid red; */
+    color: white;
+
+    
 }
 
+.navlink{
+    color: #000;
+    text-decoration: none;
+   
+
+
+}
+.navlink:hover{
+    border-bottom: 1.5px solid #0075F6;
+
+}
+.navlink:active{
+    color: #0075F6;
+}
 
 
 /* Header Left */
@@ -46,8 +75,10 @@ div{
 
 .scrolled{
     position: fixed;
-    background-color:gray;
+    background-color: aliceblue;
     z-index: 999;
+    padding: 10px 20px ;
+    box-shadow:2px 2px 10px  rgba(153, 146, 146, 0.555);
 }
 
 

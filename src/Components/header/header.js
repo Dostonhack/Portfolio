@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
-import logo from '../header/header.css'
+import './header.css'
 
-import './img/D-Slasher.jpg'
+
+import logo from './img/d-logo-300x300.png';
+
 export default class header extends Component {
     constructor(){
       super()
       this.state={
-          scrolled:false
+          scrolled:false,
+          
       }
     }
+    
 
     componentDidMount(){
       window.addEventListener('scroll', ()=>{
@@ -27,28 +31,32 @@ export default class header extends Component {
     }
 
     render() {
-       
-        console.log(logo)
+      
+
+        
       
         return (
             <header className={this.state.scrolled ? 'header1  scrolled  ': 'header1' }>
             <div className='inheader'>
-                <logo/>
+                <div className='logo'>
+                  <NavLink to='/'> <img src={logo}/></NavLink>
+                </div>
                 <ul className='headright'>
                   <li>
-                    <NavLink   to='/'>Home</NavLink>
+                  <NavLink   to='/' className='navlink' 
+                      >Home</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/about' className='navlink' >About</NavLink>
                   </li>
                   <li>
-                    <NavLink  to='/skills'>Skills</NavLink>
+                    <NavLink to='/skills' className='navlink' >Skills</NavLink>
                   </li>
                   <li>
-                    <NavLink   to='/projects'>Project</NavLink>
+                    <NavLink   to='/projects' className='navlink' >Project</NavLink>
                   </li>
                   <li>
-                    <NavLink   to='/contact'>Contact</NavLink>
+                    <NavLink   to='/contact' className='navlink' >Contact</NavLink>
                   </li>
                 </ul>
 
