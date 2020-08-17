@@ -5,6 +5,12 @@ import './header.css'
 
 import logo from './img/d-logo-300x300.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
+
 export default class header extends Component {
     constructor(){
       super()
@@ -37,7 +43,7 @@ export default class header extends Component {
       
         return (
             <header className={this.state.scrolled ? 'header1  scrolled  ': 'header1' }>
-            <div className='inheader'>
+            <div className='inheader' data-aos="zoom-in" data-aos-duration="2000">
                 <div className='logo'>
                   <NavLink to='/'> <img src={logo}/></NavLink>
                 </div>
