@@ -7,21 +7,28 @@
 
 }
 .bg1{
-    width: 37%;
-    height: 450px;
+    width: 100%;
+    height: 100vh;
     position: absolute;
     right: 0;
-    background-color: #0176F6;
+    background-color: #0e0e0fa1;
+    z-index: 1;
+
+}
+.logo{
+  
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
 
 }
 
 .bg2{
-    width: 60%;
-    height: 400px;
-    left: 190px;
-    top:80px;
+    width: 100%;
+    height: 100vh;
+   
     position: absolute;
-    background-image: url('./img/bg_1.jpg');
+    background-image: url('./img/bg_4.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 import './skills.css'
 
@@ -9,7 +10,10 @@ export default class skills extends Component {
                 {/* <div className='bgsk1'></div> */}
                 {/* <div className='bgsk2'></div> */}
                 <div className='homeSkill'>
-
+                    <div className='homeSkillin'>
+                        <span>Dig a little deeper.</span>
+                        <Link to="/Downlaod/rezume.xlsx" className='skillLink' target="_blank" download>DOWNLOAD RESUME </Link>
+                    </div>
                 </div>
                 <p className='myskills'>Technologies</p>
 

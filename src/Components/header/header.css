@@ -30,11 +30,12 @@ body{
     align-items: center;
     justify-content:center;
     top: 0;
+    list-style: none;
+    font-size: 30px;
+    font-family:cursive;
 }
-.logo img{
-    width: 40px;
-    height: 40px;
-    
+.logo:hover{
+    color: #E1A87A;
 }
 
 
@@ -54,23 +55,27 @@ body{
 }
 
 .navlink{
-    color: #000;
+    color: #e7e1e1;
     text-decoration: none;
    
 
 
 }
 .navlink:hover{
-    border-bottom: 1.5px solid #0075F6;
+    border-bottom: 1.5px solid #E1A87A;
+    color: #E1A87A;
 
 }
 .navlink:active{
-    color: #0075F6;
+    color:  #E1A87A;;
 }
 
 
 /* Header Left */
-
+.headdrop{
+    display: none;
+    color: antiquewhite;
+}
 
 /* Scroll */
 
@@ -81,7 +86,7 @@ body{
     padding: 10px 20px ;
     box-shadow:2px 2px 10px  rgba(153, 146, 146, 0.555);
 }
-
+/* DropDown */
 
 
 /* Size Phone */

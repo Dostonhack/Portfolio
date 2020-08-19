@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/src/Components/skills/Img/*.png
+/src/Components/skills/Img/*.webp
+/src/Components/skills/Img/*.jpg

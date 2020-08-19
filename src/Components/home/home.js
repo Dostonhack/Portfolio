@@ -17,12 +17,12 @@ export default class home extends Component {
         return (
             
                 <div  className='homepage' >
-                <div className='bg1' data-aos="zoom-in" data-aos-duration="2000"></div>
-              
-                <div className='bg2' data-aos="zoom-in" data-aos-duration="2000">
-                </div>
-                <p className='phello' data-aos="zoom-in" data-aos-duration="2000">HELLO</p>
-                <div className='typewrite' data-aos="zoom-in" data-aos-duration="2000">
+                    <div className='bg1' data-aos="zoom-in" data-aos-duration="2000"></div>
+                
+                    <div className='bg2' data-aos="zoom-in" data-aos-duration="2000">
+                    </div>
+                    <p className='phello' data-aos="zoom-in" data-aos-duration="2000">HELLO</p>
+                    <div className='typewrite' data-aos="zoom-in" data-aos-duration="2000">
                 
                 <Typical
                     steps={[
@@ -30,6 +30,7 @@ export default class home extends Component {
                    
                     'I am  Doston Eliboyev', 1000,
                     'I am Web Developer ',1000,
+
 
                 
                 ]}
