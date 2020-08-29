@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 import {Link,NavLink} from 'react-router-dom'
 import './header.css'
+
+
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
- 
+import { Input, Menu } from 'semantic-ui-react'
+import {  withRouter } from 'react-router-dom'
+
+// import { Input, Menu } from 'semantic-ui-react'
+// import { NavLink, withRouter } from 'react-router-dom'
 
 // import logo from './img/logo3.png';
 
@@ -38,6 +44,13 @@ export default class header extends Component {
       window.removeEventListener('scroll')
     }
 
+
+    state = { activeItem: 'home' }
+
+    handleItemClick = (e, { name }) => {
+      this.setState({ activeItem: name })
+    }
+
     render() {
       
 
@@ -48,7 +61,9 @@ export default class header extends Component {
         
       ];
       const defaultOption = options[0];
-        
+
+      const { activeItem } = this.state
+
       
         return (
             <header className={this.state.scrolled ? 'header1  scrolled  ': 'header1' }>
@@ -85,7 +100,7 @@ export default class header extends Component {
                     <option value="mango">Contact</option>
                     
                   </select> */}
-                  <Dropdown options={options}  className='ClassNameDrop' onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
+
 
                 </div>
 
@@ -96,7 +111,8 @@ export default class header extends Component {
            </div>
             
             
-          </header>
+          
+            </header>
         ) 
     }
 }
