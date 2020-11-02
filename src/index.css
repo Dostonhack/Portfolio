@@ -1,9 +1,17 @@
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Emirates;
 }
 
+@font-face{
+  font-family: 'Emirates';
+  src: url('./fonts/Emirates\ Bold.ttf');
+  src: url('./fonts/Emirates\ Bold.otf');
+  src: url('./fonts/Emirates\ Bold.woff');
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'sans-serif', 'Roboto', 'Oxygen',

@@ -1,7 +1,11 @@
+.skillspage{
+    height: 200vh;
+    position: relative;
+}
+
 .homeSkill
 {
     height: 100vh;
-    width: 98.7vw;
     background-image: url('./Img/img3.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +17,7 @@
     position: absolute;
     z-index: 2;
     height: 100vh;
-    width: 98.7vw;
+    width: 100%;
 
 
 }
@@ -23,7 +27,7 @@
     font-size: 80px;
     color: rgb(255, 232, 189);
     top:35%;
-    width: 500px;
+    width: 45%;
     left: 7%;
 }
 .skillLink{
@@ -41,30 +45,6 @@
     transition: 1s;
     text-decoration: none;
 }
-.skillspage{
-    width: 80%;
-    height: 100vh;
-    position: relative;
-}
-.bgsk1{
-    position: absolute;
-    width: 200px;
-    height: 300px;
-    top: 20%;
-    right: 20%;
-    background-color:#0176F6;
-
-}
-
-.bgsk2{
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    top: 30%;
-    left: 5%;
-    background-color:#0176F6;
-
-}
 .myskills{
     display: flex;
     justify-content: center;
@@ -75,29 +55,41 @@
 }
 
 .sklis{
-    float: left;
+    height: 89vh;
     position: relative;
-    width: 100%;
-    height: 400px;
-
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    padding-top: 10%;
 }
 .sklis1{
-    position: absolute;
     width: 50%;
     height: 100%;
-    left: 25%;
-    padding: 50px 0 ;
 }
-.sklis1 h1{
-    padding: 25px 0;
-}
+
 .sklis2{
-   
-    position: absolute;
-    right:-25%;
     width: 50%;
     height: 100%;
-    padding: 50px 0 ;
+}
 
 
+.footerpageskills{
+    width: 100%;
+    height: 7vh;
+    background-color: #00000040;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    position: absolute;
+}
+
+/* Size Phone */
+
+@media only screen and (max-width: 1000px) {
+    
+    .homeSkillin span{
+        font-size: 50px;
+    }
 }

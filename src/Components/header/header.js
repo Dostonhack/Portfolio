@@ -2,16 +2,7 @@ import React, { Component } from 'react'
 import {Link,NavLink} from 'react-router-dom'
 import './header.css'
 
-
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
-import { Input, Menu } from 'semantic-ui-react'
-import {  withRouter } from 'react-router-dom'
-
-// import { Input, Menu } from 'semantic-ui-react'
-// import { NavLink, withRouter } from 'react-router-dom'
-
-// import logo from './img/logo3.png';
+import {FaTimesCircle} from 'react-icons/fa'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -24,11 +15,25 @@ export default class header extends Component {
       super()
       this.state={
           scrolled:false,
-          
+          showMenu:false,
       }
-    }
-    
+      this.showMenu = this.showMenu.bind(this);
 
+      
+    }
+    showMenu(event) {
+      event.preventDefault();
+      console.log(event)
+      this.setState({
+        showMenu: true,
+      });
+
+    }
+    CloseMenu = ()=>{
+      this.setState({
+        showMenu:false
+      })
+    }
     componentDidMount(){
       window.addEventListener('scroll', ()=>{
         const istop =window.scrollY< 100;
@@ -45,32 +50,18 @@ export default class header extends Component {
     }
 
 
-    state = { activeItem: 'home' }
-
-    handleItemClick = (e, { name }) => {
-      this.setState({ activeItem: name })
-    }
+  
 
     render() {
       
-
-      const options = [
-        <Link   to='/' className='navlink'>Home</Link>,
-        <Link to='/project' className='navlink' >Project</Link>,
-        <Link to='/about' className='navlink' >About</Link>
-        
-      ];
-      const defaultOption = options[0];
-
-      const { activeItem } = this.state
-
+      
       
         return (
             <header className={this.state.scrolled ? 'header1  scrolled  ': 'header1' }>
             <div className='inheader' data-aos="zoom-in" data-aos-duration="2000">
                 <div >
-                  <NavLink to='/' className='logo'>  <span>DE</span></NavLink>
-                  {/* <NavLink to='/'> <img src={logo}/></NavLink> */}
+                  <NavLink to='/' className='logo'></NavLink>
+
                 </div>
                 <ul className='headright'>
                   <li>
@@ -78,7 +69,7 @@ export default class header extends Component {
                       >Home</NavLink>
                   </li>
                   <li>
-                    <NavLink to='/project' className='navlink' >Project</NavLink>
+                    <NavLink   to='/projects' className='navlink' >Portfolio</NavLink>
                   </li>
                   <li>
                     <NavLink to='/about' className='navlink' >About</NavLink>
@@ -86,29 +77,40 @@ export default class header extends Component {
                   <li>
                     <NavLink to='/skills' className='navlink' >Skills</NavLink>
                   </li>
-                  
-                  <li>
-                    <NavLink   to='/contact' className='navlink' >Contact</NavLink>
-                  </li>
                 </ul>
                 <div className='headdrop'>
-                  {/* <select>
-                    <option  selected value="grapefruit">Home</option>
-                    <option value="lime">Project</option>
-                    <option  value="coconut">About</option>
-                    <option value="mango">Skills</option>
-                    <option value="mango">Contact</option>
+                    <div className='dropdow'>
+                      <button onClick={this.showMenu} className='dropbtn'>Menu</button>
+                      {
+                        this.state.showMenu
+                        ?(
+                        <div id='myDropdown' className='dropdown-cantent'>
+
+                            <a onClick={this.CloseMenu} className='dropclose'> <FaTimesCircle/></a> 
+                            <NavLink to='/' className='navlink'>Home</NavLink>
+                            <NavLink to='/projects' className='navlink' >Portfolio</NavLink>
+                            <NavLink to='/about' className='navlink' >About</NavLink>
+                            <NavLink to='/skills' className='navlink' >Skills</NavLink>
+                        
+                          
+                          </div>
+                        )
+                        :(
+                          null
+                        )
+                      }
+                      
+                    </div>
                     
-                  </select> */}
 
 
                 </div>
-
+            </div>
 
 
 
               
-           </div>
+          
             
             
           

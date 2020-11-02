@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './home.css'
 import Typical from 'react-typical'
-
+import { FaTelegram ,FaInstagram,FaGit, FaGithub} from 'react-icons/fa';
+import {Link} from 'react-router-dom'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -27,9 +28,9 @@ export default class home extends Component {
                 <Typical
                     steps={[
                         
-                   
-                    'I am  Doston Eliboyev', 1000,
-                    'I am Web Developer ',1000,
+                    
+                    'I am  Doston Eliboyev', 3000,
+                    'I am Web Developer ',3000,
 
 
                 
@@ -38,6 +39,11 @@ export default class home extends Component {
                     wrapper="p"
                     />
                     </div> 
+                    <div className='home-soial'>
+                        <a href='https://github.com/Dostonhack' className='home-soial-link'><FaGithub/></a>
+                        <a  href='https://www.instagram.com/doston_eliboyev_samarqand/?utm_source=instagram&utm_medium=email&utm_campaign=unseen_direct_message_email&click_source=user_cta' className='home-soial-link'><FaInstagram /></a>
+                        <a  href='https://t.me/DostonEliboyev' className='home-soial-link'><FaTelegram /></a>
+                    </div>
                     
                 </div>
                 
