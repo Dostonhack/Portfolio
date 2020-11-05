@@ -11,7 +11,7 @@ export default class skills extends Component {
                 <div className='homeSkill'>
                     <div className='homeSkillin'>
                         <span>Dig a little deeper.</span>
-                        <a href="https://drive.google.com/file/d/1C1sf8hisoQratQoGGaEU3ZNE3Q5xWl_F/view?ths=true" download className='skillLink' target="_blank" download>DOWNLOAD RESUME </a>
+                        <a href="https://drive.google.com/file/d/1UtcO3vrplqySA-GPZ7XsGoF6DUSUzJcl/view?usp=sharing" download className='skillLink' target="_blank" download>DOWNLOAD RESUME </a>
                     </div>
                 </div>
                 <p className='myskills'>Technologies</p>
@@ -46,14 +46,7 @@ export default class skills extends Component {
                             <li>Npm </li>
                             <li>Version Control(Git)</li>
                             <li>WordPress (limited) </li>
-                            <li>Python (Basics)</li>
-                            <li>NumPy library (limited)</li>
-                            <li>SciPy library (limited)</li>
-                            <li>Pandas library (limited)</li>
-                            <li> Sikit-Learn library (limited)</li>
-                            <li>Matplotlib library (limited)</li>
-                            <li>Bokeh library (limited)</li>
-                            <li>Saborn library (limited)</li>
+                            
                         </ul>
                     
                     </div>
