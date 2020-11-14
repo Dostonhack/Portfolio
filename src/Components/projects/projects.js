@@ -43,11 +43,13 @@ export default class projects extends Component {
                             <img src={probg4} className='pro-img'/>
                             <a href='https://vigilant-lewin-114902.netlify.app/' className='pro-btn'>VIEW PROJECT</a>
                         </div>
-                        <div className='footerpage'>
-                        <p>Eliboyev Doston  Web Full Stack Develpor  </p>
-                        </div>
+                        
                     </div>
+                    
 
+                </div>
+                <div className='footerpage'>
+                        <p>Eliboyev Doston  Web Full Stack Develpor  </p>
                 </div>
             </div>
                 

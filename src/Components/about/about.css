@@ -149,11 +149,23 @@
         position: absolute;
         top:35%;
     }
+    .about-three{
+        height: 120vh;
+
+    }
+    .about-two{
+        height: 150vh;
+    }
+    .AboutPage{
+        height: 260vh;
+    }
 }
 
   /*Size iPod Pro  */
 @media only screen and (max-width: 768px) {
+    .about-three{
 
+    }
 
 }
 

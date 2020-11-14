@@ -12,7 +12,6 @@ import skills from './Components/skills/skills'
 import projects from './Components/projects/projects'
 
 import Header from './Components/header/header'
-import Footer from './Components/footer/footer'
 
 ReactDOM.render(
   <React.StrictMode>

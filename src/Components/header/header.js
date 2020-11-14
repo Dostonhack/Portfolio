@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import {Link,NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './header.css'
-
-import {FaTimesCircle} from 'react-icons/fa'
+import {FaTimesCircle, FaBars} from 'react-icons/fa'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init();
+
 
 
 export default class header extends Component {
@@ -16,11 +16,17 @@ export default class header extends Component {
       this.state={
           scrolled:false,
           showMenu:false,
+          toggle: false
       }
       this.showMenu = this.showMenu.bind(this);
-
+      
       
     }
+
+    handleClick() {
+      this.setState({toggle: !this.state.toggle})
+    }
+    
     showMenu(event) {
       event.preventDefault();
       console.log(event)
@@ -34,11 +40,15 @@ export default class header extends Component {
         showMenu:false
       })
     }
+  
+
+
     componentDidMount(){
       window.addEventListener('scroll', ()=>{
         const istop =window.scrollY< 100;
           if(istop!==true){
-            this.setState({scrolled:true})
+            this.setState({scrolled:true ,showMenu:false})
+            
           }else{
             this.setState({scrolled:false})
           }
@@ -53,7 +63,12 @@ export default class header extends Component {
   
 
     render() {
-      
+      // const style = {
+      //   overflow: 'visible',
+      //   cursor: 'pointer',
+      //   // disable touch highlighting on devices
+      //   WebkitTapHighlightColor: "rgba(0,0,0,0)",
+      // }
       
       
         return (
@@ -80,7 +95,10 @@ export default class header extends Component {
                 </ul>
                 <div className='headdrop'>
                     <div className='dropdow'>
-                      <button onClick={this.showMenu} className='dropbtn'>Menu</button>
+                      
+                        <FaBars className='fabars' onClick={this.showMenu}/>
+                      
+                      
                       {
                         this.state.showMenu
                         ?(
@@ -93,7 +111,7 @@ export default class header extends Component {
                             <NavLink to='/skills' className='navlink' >Skills</NavLink>
                         
                           
-                          </div>
+                          </div> 
                         )
                         :(
                           null

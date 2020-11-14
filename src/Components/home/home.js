@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './home.css'
 import Typical from 'react-typical'
-import { FaTelegram ,FaInstagram,FaGit, FaGithub} from 'react-icons/fa';
-import {Link} from 'react-router-dom'
+import { FaTelegram ,FaInstagram, FaGithub} from 'react-icons/fa';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

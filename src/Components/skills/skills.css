@@ -1,5 +1,5 @@
 .skillspage{
-    height: 200vh;
+    height: 180vh;
     position: relative;
 }
 
@@ -24,7 +24,7 @@
 
 .homeSkillin span{
     position: absolute;
-    font-size: 80px;
+    font-size: 70px;
     color: rgb(255, 232, 189);
     top:35%;
     width: 45%;
@@ -45,31 +45,34 @@
     transition: 1s;
     text-decoration: none;
 }
+
+/* My secout page */
 .myskills{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top:50px;
+    padding-top:130px;
     font-size: 35px;
     font-weight: 500;
 }
 
-.sklis{
-    height: 89vh;
-    position: relative;
+.sklis-ver{
+    height: 63vh;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    padding-left: 20%;
-    padding-top: 10%;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 60px 0 0 0;
+    flex-wrap: wrap;
+
+
 }
 .sklis1{
-    width: 50%;
-    height: 100%;
+    padding: 15px 20px;
 }
 
 .sklis2{
-    width: 50%;
-    height: 100%;
+    padding: 15px 20px;
 }
 
 
@@ -91,5 +94,17 @@
     
     .homeSkillin span{
         font-size: 50px;
+    }
+    .skillspage{
+        height: 80vh;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+    .sklis-ver{
+        height: 85vh;
+    }
+    .homeSkillin span{
+        font-size: 35px;
     }
 }

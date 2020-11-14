@@ -14,10 +14,9 @@ export default class skills extends Component {
                         <a href="https://drive.google.com/file/d/1UtcO3vrplqySA-GPZ7XsGoF6DUSUzJcl/view?usp=sharing" download className='skillLink' target="_blank" download>DOWNLOAD RESUME </a>
                     </div>
                 </div>
-                <p className='myskills'>Technologies</p>
 
-                
-                <div className='sklis'>
+                <p className='myskills'>Technologies</p>
+                <div className='sklis-ver'>
                 
                     <div className='sklis1'>
                         <h2>Frond End</h2>
@@ -29,30 +28,19 @@ export default class skills extends Component {
                             <li> jQuery(limited)</li>
                             <li>React JS (limited)</li>
                             <li>Responsive Layout</li>
-
-                        
                         </ul>
-
-
                     </div>
-                
                     <div className='sklis2'>
-                    <h2>Back End</h2>
-                    <div>
-                        <ul>
-                            <li>Node JS</li>
-                            <li>Express JS</li>
-                            <li>MySql</li>
-                            <li>Npm </li>
-                            <li>Version Control(Git)</li>
-                            <li>WordPress (limited) </li>
-                            
-                        </ul>
-                    
-                    </div>
-                    
-
-                    </div>                
+                        <h2>Back End</h2>
+                            <ul>
+                                <li>Node JS</li>
+                                <li>Express JS</li>
+                                <li>MySql</li>
+                                <li>Npm </li>
+                                <li>Version Control(Git)</li>
+                                <li>WordPress (limited) </li>
+                            </ul>
+                    </div>                             
                 </div>
                 <div className='footerpageskills'>
                         <p>Eliboyev Doston  Web 

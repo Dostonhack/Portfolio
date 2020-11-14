@@ -3,7 +3,6 @@ import {FaFacebookF,FaInstagram,FaMapMarkerAlt, FaTelegramPlane,FaMobileAlt,FaEn
 
 import Footer from '../footer/footer'
 
-import {Link} from 'react-router-dom'
 import './about.css'
 export default class about extends Component {
     render() {
